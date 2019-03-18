@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task</title>
+       </head>
+    <div id="playground">
+        <form>
+        <p>Highlight keywords as you type: <input id="keywords"></p>
+        </form>        
+        <p>Why is reading not popular today? Teenagers try to spend their free time with their cell phones. They can chat, play, text, but they don’t read.
+
+            We can always hear that our ministers of education attribute the crisis of reading to methods of teaching. In their speeches they call teaching too archaic or too modern.
+            
+            In my opinion, these methods have nothing to do with the teenagers’ disaffection of the book. Reading is an activity that can only be practiced in silence and solitude.
+            
+            I think it is the reason why there are reading problems among teenagers today.
+            
+            Everything that we can see in the world is full of noise now. If we can listen to music together, we can’t read together. We can read only alone.
+            
+            It is even a great pleasure when we discovered the book that we can think over being alone. And only after that we will be ready to share our thoughts with the others if we like to do that.
+            
+            But solitude and silence are now luxurious goods in our hectic world. That is why reading can’t become a hobby for teenagers, unfortunately.</p>
+        </div>        
+        <script src="js.js"></script>
+        <script>        
+          window.addEventListener("DOMContentLoaded", function(e) {
+            var myfun2 = new fun("playground");
+            myfun2.setMatchType("left");
+            document.getElementById("keywords").addEventListener("keyup", function(e) {
+              myfun2.apply(this.value);
+            }, false);
+          }, false);        
+        </script>
+</html>
